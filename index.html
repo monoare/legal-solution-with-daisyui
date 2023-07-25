@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal Solution</title>
+
+    <!-- Tailwind and DaisyUI link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font: Poppins, EB Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome link -->
+    <script
+      src=" https://kit.fontawesome.com/f7beedfb26.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Tailwind Custom Style -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Tailwind Style -->
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+      .font-garamond {
+        font-family: "EB Garamond", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar section -->
+      <section class="container mx-auto">
+        <div
+          class="navbar my-5 lg:my-12 bg-base-100 flex flex-col items-start md:flex-row"
+        >
+          <div class="navbar-start flex flex-col items-start md:flex-row">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost bg-orange-300 lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-orange-300 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li>
+                  <a>Services<i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li>
+                  <a>Cases<i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li>
+                  <a>Blog<i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li>
+                  <a>Contact US<i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost normal-case text-xl"
+              ><img src="images/logo2.png" alt=""
+            /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li>
+                <a>Services<i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a>Cases<i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a>Blog<i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a>Contact US<i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end ml-5">
+            <a
+              class="btn md:h-16 bg-[#B68C5A] lg:px-7 lg:py-5 font-semibold text-white"
+              >Free Consultation</a
+            >
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="container mx-auto">
+      <!-- Banner section -->
+      <section>
+        <div
+          class="hero md:min-h-screen lg:h-[550px]"
+          style="background-image: url(images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-2xl">
+              <h1
+                class="mb-5 text-lg md:text-7xl font-extrabold font-garamond lg:leading-[80px]"
+              >
+                We Provide Effective Legal Solutions
+              </h1>
+              <p class="my-6 text-sm md:text-lg">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+              <div class="mt-8 flex flex-col items-center gap-y-5 md:flex-row">
+                <input
+                  type="text"
+                  placeholder="Search your services"
+                  class="input input-bordered input-primary w-full mr-6 lg:h-16"
+                /><button class="btn btn-primary w-40 lg:h-16">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
